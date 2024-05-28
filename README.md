@@ -26,7 +26,7 @@ from dual import CDual
 from functools import partial
 import math
 
-# Defined the sigmoid function
+# Define the sigmoid function
 def gx(x: float):
     return math.exp(x) / (1 + math.exp(x))
 
@@ -45,6 +45,3 @@ x = 0.0
 print(f"The expected value of sigmoid(x) at {x} is {gx(x)} and gradient is {grad_gx(x)}")
 print(f"Value of sigmoid(x) at {x} using AD is {value_and_grad_fn(x)[0]} and gradient is {value_and_grad_fn(x)[1]}")
 ```
-
-
-
